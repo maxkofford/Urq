@@ -190,17 +190,17 @@
 #if UNITY_EDITOR
             public static bool ObjectIsPrefabInstance(GameObject gameObject)
             {
-                bool isPrefabInstance = PrefabUtility.GetPrefabParent(gameObject) != null && PrefabUtility.GetPrefabObject(gameObject.transform) != null;
+                bool isPrefabInstance = PrefabUtility.GetCorrespondingObjectFromSource(gameObject) != null && PrefabUtility.GetPrefabObject(gameObject.transform) != null;
                 return isPrefabInstance;
             }
             public static bool ObjectIsPrefabOriginal(GameObject gameObject)
             {
-                bool isPrefabOriginal = PrefabUtility.GetPrefabParent(gameObject) == null && PrefabUtility.GetPrefabObject(gameObject.transform) != null;
+                bool isPrefabOriginal = PrefabUtility.GetCorrespondingObjectFromSource(gameObject) == null && PrefabUtility.GetPrefabObject(gameObject.transform) != null;
                 return isPrefabOriginal;
             }
             public static bool ObjectIsDisconnectedPrefabInstance(GameObject gameObject)
             {
-                bool isDisconnectedPrefabInstance = PrefabUtility.GetPrefabParent(gameObject) != null && PrefabUtility.GetPrefabObject(gameObject.transform) == null;
+                bool isDisconnectedPrefabInstance = PrefabUtility.GetCorrespondingObjectFromSource(gameObject) != null && PrefabUtility.GetPrefabObject(gameObject.transform) == null;
                 return isDisconnectedPrefabInstance;
             }
 #endif

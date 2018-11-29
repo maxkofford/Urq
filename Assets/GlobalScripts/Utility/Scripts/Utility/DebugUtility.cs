@@ -35,7 +35,7 @@ namespace Utilities
 		}
 
 		public static bool isDebugBuild { get { return UnityEngine.Debug.isDebugBuild; } }
-		public static ILogger logger { get { return UnityEngine.Debug.logger; } }
+		public static ILogger logger { get { return UnityEngine.Debug.unityLogger; } }
 
 		// Since "Conditional" attributes are evaluated at the call point we use #if here to force the issue globally.
 		// You should never define UTILITIES_UNDEFINED so those calls never happen.

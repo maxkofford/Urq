@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movement: {fileID: 11400000, guid: 8aea8cc2e407868468fc31289926fd68, type: 2}
   attacks:
-  - {fileID: 11400000, guid: 5763f9cceec2fc242afe9a5a025e575e, type: 2}
+  - {fileID: 11400000, guid: 75adc7d51c17df84187b120974a7b426, type: 2}
   mass: 1
   drag: 0
   angularDrag: 1
